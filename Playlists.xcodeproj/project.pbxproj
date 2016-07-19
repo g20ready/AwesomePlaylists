@@ -1,0 +1,845 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		130180E41D3CEE4800274E00 /* PlaylistsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 130180E31D3CEE4800274E00 /* PlaylistsTableViewController.m */; };
+		130180E71D3CF74300274E00 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130180E61D3CF74300274E00 /* CoreData.framework */; };
+		130180EA1D3CFF1100274E00 /* TracksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 130180E91D3CFF1100274E00 /* TracksTableViewController.m */; };
+		130B13C21D3E3D860060059C /* UITableViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 130B13C11D3E3D860060059C /* UITableViewController+Additions.m */; };
+		13847B551D3BF3A900EDFA7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13847B541D3BF3A900EDFA7F /* main.m */; };
+		13847B581D3BF3A900EDFA7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13847B571D3BF3A900EDFA7F /* AppDelegate.m */; };
+		13847B5B1D3BF3A900EDFA7F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13847B5A1D3BF3A900EDFA7F /* ViewController.m */; };
+		13847B5E1D3BF3A900EDFA7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13847B5C1D3BF3A900EDFA7F /* Main.storyboard */; };
+		13847B611D3BF3A900EDFA7F /* Playlists.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 13847B5F1D3BF3A900EDFA7F /* Playlists.xcdatamodeld */; };
+		13847B631D3BF3A900EDFA7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13847B621D3BF3A900EDFA7F /* Assets.xcassets */; };
+		13847B661D3BF3A900EDFA7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13847B641D3BF3A900EDFA7F /* LaunchScreen.storyboard */; };
+		13847B711D3BF3A900EDFA7F /* PlaylistsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13847B701D3BF3A900EDFA7F /* PlaylistsTests.m */; };
+		13847B7C1D3BF3A900EDFA7F /* PlaylistsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13847B7B1D3BF3A900EDFA7F /* PlaylistsUITests.m */; };
+		13847B991D3C00F200EDFA7F /* SyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 13847B981D3C00F200EDFA7F /* SyncManager.m */; };
+		13847B9D1D3C045300EDFA7F /* PlaylistDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 13847B9C1D3C045300EDFA7F /* PlaylistDTO.m */; };
+		13847BA01D3C056300EDFA7F /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 13847B9F1D3C056300EDFA7F /* NetworkManager.m */; };
+		13847BA61D3C13D200EDFA7F /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 13847BA51D3C13D200EDFA7F /* CoreDataManager.m */; };
+		13847BBB1D3CA5C400EDFA7F /* TrackDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 13847BBA1D3CA5C400EDFA7F /* TrackDTO.m */; };
+		13847BBE1D3CA67300EDFA7F /* ResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 13847BBD1D3CA67300EDFA7F /* ResponseDTO.m */; };
+		13847BD31D3CC1D400EDFA7F /* Track+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 13847BCC1D3CC1D400EDFA7F /* Track+CoreDataProperties.m */; };
+		13847BD41D3CC1D400EDFA7F /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = 13847BCE1D3CC1D400EDFA7F /* Track.m */; };
+		13847BD51D3CC1D400EDFA7F /* Playlist+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 13847BD01D3CC1D400EDFA7F /* Playlist+CoreDataProperties.m */; };
+		13847BD61D3CC1D400EDFA7F /* Playlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 13847BD21D3CC1D400EDFA7F /* Playlist.m */; };
+		13F4A9FC1D3D33BB0083C14F /* UIAlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F4A9FB1D3D33BB0083C14F /* UIAlertManager.m */; };
+		51828947C284333E755BF376 /* libPods-Playlists.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A921BB2480E477DB7D9532E1 /* libPods-Playlists.a */; };
+		926D4A1E0BAB2AE4D7CFD861 /* libPods-PlaylistsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B14CF7E9A9DC20847C66C2A /* libPods-PlaylistsTests.a */; };
+		EEF7BD26E7227BBD631E4E96 /* libPods-PlaylistsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1EA9A8E7CFB8FFE6E2D1E7 /* libPods-PlaylistsUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13847B6D1D3BF3A900EDFA7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13847B481D3BF3A900EDFA7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13847B4F1D3BF3A900EDFA7F;
+			remoteInfo = Playlists;
+		};
+		13847B781D3BF3A900EDFA7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13847B481D3BF3A900EDFA7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13847B4F1D3BF3A900EDFA7F;
+			remoteInfo = Playlists;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09CEE7843934D72471969E5C /* Pods-Playlists.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playlists.release.xcconfig"; path = "Pods/Target Support Files/Pods-Playlists/Pods-Playlists.release.xcconfig"; sourceTree = "<group>"; };
+		130180E21D3CEE4800274E00 /* PlaylistsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistsTableViewController.h; sourceTree = "<group>"; };
+		130180E31D3CEE4800274E00 /* PlaylistsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistsTableViewController.m; sourceTree = "<group>"; };
+		130180E61D3CF74300274E00 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		130180E81D3CFF1100274E00 /* TracksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TracksTableViewController.h; sourceTree = "<group>"; };
+		130180E91D3CFF1100274E00 /* TracksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TracksTableViewController.m; sourceTree = "<group>"; };
+		130B13C01D3E3D860060059C /* UITableViewController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewController+Additions.h"; sourceTree = "<group>"; };
+		130B13C11D3E3D860060059C /* UITableViewController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewController+Additions.m"; sourceTree = "<group>"; };
+		13847B501D3BF3A900EDFA7F /* Playlists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playlists.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13847B541D3BF3A900EDFA7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		13847B561D3BF3A900EDFA7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		13847B571D3BF3A900EDFA7F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		13847B591D3BF3A900EDFA7F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		13847B5A1D3BF3A900EDFA7F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		13847B5D1D3BF3A900EDFA7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		13847B601D3BF3A900EDFA7F /* Playlists.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Playlists.xcdatamodel; sourceTree = "<group>"; };
+		13847B621D3BF3A900EDFA7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13847B651D3BF3A900EDFA7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		13847B671D3BF3A900EDFA7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13847B6C1D3BF3A900EDFA7F /* PlaylistsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaylistsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13847B701D3BF3A900EDFA7F /* PlaylistsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaylistsTests.m; sourceTree = "<group>"; };
+		13847B721D3BF3A900EDFA7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13847B771D3BF3A900EDFA7F /* PlaylistsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaylistsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13847B7B1D3BF3A900EDFA7F /* PlaylistsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaylistsUITests.m; sourceTree = "<group>"; };
+		13847B7D1D3BF3A900EDFA7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13847B971D3C00F200EDFA7F /* SyncManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncManager.h; sourceTree = "<group>"; };
+		13847B981D3C00F200EDFA7F /* SyncManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncManager.m; sourceTree = "<group>"; };
+		13847B9B1D3C045300EDFA7F /* PlaylistDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistDTO.h; sourceTree = "<group>"; };
+		13847B9C1D3C045300EDFA7F /* PlaylistDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistDTO.m; sourceTree = "<group>"; };
+		13847B9E1D3C056300EDFA7F /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		13847B9F1D3C056300EDFA7F /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		13847BA41D3C13D200EDFA7F /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		13847BA51D3C13D200EDFA7F /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		13847BB91D3CA5C400EDFA7F /* TrackDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackDTO.h; sourceTree = "<group>"; };
+		13847BBA1D3CA5C400EDFA7F /* TrackDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackDTO.m; sourceTree = "<group>"; };
+		13847BBC1D3CA67300EDFA7F /* ResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseDTO.h; sourceTree = "<group>"; };
+		13847BBD1D3CA67300EDFA7F /* ResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseDTO.m; sourceTree = "<group>"; };
+		13847BCB1D3CC1D400EDFA7F /* Track+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Track+CoreDataProperties.h"; sourceTree = "<group>"; };
+		13847BCC1D3CC1D400EDFA7F /* Track+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Track+CoreDataProperties.m"; sourceTree = "<group>"; };
+		13847BCD1D3CC1D400EDFA7F /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
+		13847BCE1D3CC1D400EDFA7F /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
+		13847BCF1D3CC1D400EDFA7F /* Playlist+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Playlist+CoreDataProperties.h"; sourceTree = "<group>"; };
+		13847BD01D3CC1D400EDFA7F /* Playlist+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Playlist+CoreDataProperties.m"; sourceTree = "<group>"; };
+		13847BD11D3CC1D400EDFA7F /* Playlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Playlist.h; sourceTree = "<group>"; };
+		13847BD21D3CC1D400EDFA7F /* Playlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Playlist.m; sourceTree = "<group>"; };
+		13F4A9FA1D3D33BB0083C14F /* UIAlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAlertManager.h; sourceTree = "<group>"; };
+		13F4A9FB1D3D33BB0083C14F /* UIAlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIAlertManager.m; sourceTree = "<group>"; };
+		62686E4FC6C35EE92B6A302A /* Pods-Playlists.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playlists.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Playlists/Pods-Playlists.debug.xcconfig"; sourceTree = "<group>"; };
+		71AF6BA499641E6004DA262B /* Pods-PlaylistsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaylistsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlaylistsTests/Pods-PlaylistsTests.release.xcconfig"; sourceTree = "<group>"; };
+		94ED85AA0933441A71F8FFA0 /* Pods-PlaylistsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaylistsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlaylistsUITests/Pods-PlaylistsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9B14CF7E9A9DC20847C66C2A /* libPods-PlaylistsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlaylistsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A921BB2480E477DB7D9532E1 /* libPods-Playlists.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Playlists.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA1EA9A8E7CFB8FFE6E2D1E7 /* libPods-PlaylistsUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlaylistsUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2AB33D32D7E9DEEB54C52A /* Pods-PlaylistsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaylistsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlaylistsUITests/Pods-PlaylistsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D44496B1C11CF80158FE5B2A /* Pods-PlaylistsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaylistsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlaylistsTests/Pods-PlaylistsTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13847B4D1D3BF3A900EDFA7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				130180E71D3CF74300274E00 /* CoreData.framework in Frameworks */,
+				51828947C284333E755BF376 /* libPods-Playlists.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13847B691D3BF3A900EDFA7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				926D4A1E0BAB2AE4D7CFD861 /* libPods-PlaylistsTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13847B741D3BF3A900EDFA7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEF7BD26E7227BBD631E4E96 /* libPods-PlaylistsUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		130180E51D3CEE4E00274E00 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				130180E21D3CEE4800274E00 /* PlaylistsTableViewController.h */,
+				130180E31D3CEE4800274E00 /* PlaylistsTableViewController.m */,
+				13847B591D3BF3A900EDFA7F /* ViewController.h */,
+				13847B5A1D3BF3A900EDFA7F /* ViewController.m */,
+				130180E81D3CFF1100274E00 /* TracksTableViewController.h */,
+				130180E91D3CFF1100274E00 /* TracksTableViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		13847B471D3BF3A900EDFA7F = {
+			isa = PBXGroup;
+			children = (
+				13847B521D3BF3A900EDFA7F /* Playlists */,
+				13847B6F1D3BF3A900EDFA7F /* PlaylistsTests */,
+				13847B7A1D3BF3A900EDFA7F /* PlaylistsUITests */,
+				13847B511D3BF3A900EDFA7F /* Products */,
+				6913490022021488F1BCC05F /* Pods */,
+				970CDA1EFDE0E7BBEFB3CB6C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		13847B511D3BF3A900EDFA7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13847B501D3BF3A900EDFA7F /* Playlists.app */,
+				13847B6C1D3BF3A900EDFA7F /* PlaylistsTests.xctest */,
+				13847B771D3BF3A900EDFA7F /* PlaylistsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13847B521D3BF3A900EDFA7F /* Playlists */ = {
+			isa = PBXGroup;
+			children = (
+				13F4A9F91D3D33A50083C14F /* Utils */,
+				130180E51D3CEE4E00274E00 /* UI */,
+				13847B9A1D3C043800EDFA7F /* DTO */,
+				13847B961D3C00C400EDFA7F /* Core */,
+				13847B891D3BFAB400EDFA7F /* Model */,
+				13847B561D3BF3A900EDFA7F /* AppDelegate.h */,
+				13847B571D3BF3A900EDFA7F /* AppDelegate.m */,
+				13847B5C1D3BF3A900EDFA7F /* Main.storyboard */,
+				13847B621D3BF3A900EDFA7F /* Assets.xcassets */,
+				13847B641D3BF3A900EDFA7F /* LaunchScreen.storyboard */,
+				13847B671D3BF3A900EDFA7F /* Info.plist */,
+				13847B5F1D3BF3A900EDFA7F /* Playlists.xcdatamodeld */,
+				13847B531D3BF3A900EDFA7F /* Supporting Files */,
+			);
+			path = Playlists;
+			sourceTree = "<group>";
+		};
+		13847B531D3BF3A900EDFA7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13847B541D3BF3A900EDFA7F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13847B6F1D3BF3A900EDFA7F /* PlaylistsTests */ = {
+			isa = PBXGroup;
+			children = (
+				13847B701D3BF3A900EDFA7F /* PlaylistsTests.m */,
+				13847B721D3BF3A900EDFA7F /* Info.plist */,
+			);
+			path = PlaylistsTests;
+			sourceTree = "<group>";
+		};
+		13847B7A1D3BF3A900EDFA7F /* PlaylistsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				13847B7B1D3BF3A900EDFA7F /* PlaylistsUITests.m */,
+				13847B7D1D3BF3A900EDFA7F /* Info.plist */,
+			);
+			path = PlaylistsUITests;
+			sourceTree = "<group>";
+		};
+		13847B891D3BFAB400EDFA7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				13847BCB1D3CC1D400EDFA7F /* Track+CoreDataProperties.h */,
+				13847BCC1D3CC1D400EDFA7F /* Track+CoreDataProperties.m */,
+				13847BCD1D3CC1D400EDFA7F /* Track.h */,
+				13847BCE1D3CC1D400EDFA7F /* Track.m */,
+				13847BCF1D3CC1D400EDFA7F /* Playlist+CoreDataProperties.h */,
+				13847BD01D3CC1D400EDFA7F /* Playlist+CoreDataProperties.m */,
+				13847BD11D3CC1D400EDFA7F /* Playlist.h */,
+				13847BD21D3CC1D400EDFA7F /* Playlist.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		13847B961D3C00C400EDFA7F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				13847B971D3C00F200EDFA7F /* SyncManager.h */,
+				13847B981D3C00F200EDFA7F /* SyncManager.m */,
+				13847B9E1D3C056300EDFA7F /* NetworkManager.h */,
+				13847B9F1D3C056300EDFA7F /* NetworkManager.m */,
+				13847BA41D3C13D200EDFA7F /* CoreDataManager.h */,
+				13847BA51D3C13D200EDFA7F /* CoreDataManager.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		13847B9A1D3C043800EDFA7F /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				13847B9B1D3C045300EDFA7F /* PlaylistDTO.h */,
+				13847B9C1D3C045300EDFA7F /* PlaylistDTO.m */,
+				13847BB91D3CA5C400EDFA7F /* TrackDTO.h */,
+				13847BBA1D3CA5C400EDFA7F /* TrackDTO.m */,
+				13847BBC1D3CA67300EDFA7F /* ResponseDTO.h */,
+				13847BBD1D3CA67300EDFA7F /* ResponseDTO.m */,
+			);
+			name = DTO;
+			sourceTree = "<group>";
+		};
+		13F4A9F91D3D33A50083C14F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				13F4A9FA1D3D33BB0083C14F /* UIAlertManager.h */,
+				13F4A9FB1D3D33BB0083C14F /* UIAlertManager.m */,
+				130B13C01D3E3D860060059C /* UITableViewController+Additions.h */,
+				130B13C11D3E3D860060059C /* UITableViewController+Additions.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		6913490022021488F1BCC05F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62686E4FC6C35EE92B6A302A /* Pods-Playlists.debug.xcconfig */,
+				09CEE7843934D72471969E5C /* Pods-Playlists.release.xcconfig */,
+				D44496B1C11CF80158FE5B2A /* Pods-PlaylistsTests.debug.xcconfig */,
+				71AF6BA499641E6004DA262B /* Pods-PlaylistsTests.release.xcconfig */,
+				94ED85AA0933441A71F8FFA0 /* Pods-PlaylistsUITests.debug.xcconfig */,
+				BE2AB33D32D7E9DEEB54C52A /* Pods-PlaylistsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		970CDA1EFDE0E7BBEFB3CB6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				130180E61D3CF74300274E00 /* CoreData.framework */,
+				A921BB2480E477DB7D9532E1 /* libPods-Playlists.a */,
+				9B14CF7E9A9DC20847C66C2A /* libPods-PlaylistsTests.a */,
+				AA1EA9A8E7CFB8FFE6E2D1E7 /* libPods-PlaylistsUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13847B4F1D3BF3A900EDFA7F /* Playlists */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13847B801D3BF3A900EDFA7F /* Build configuration list for PBXNativeTarget "Playlists" */;
+			buildPhases = (
+				29ACB5532A482CD9C1465A88 /* [CP] Check Pods Manifest.lock */,
+				13847B4C1D3BF3A900EDFA7F /* Sources */,
+				13847B4D1D3BF3A900EDFA7F /* Frameworks */,
+				13847B4E1D3BF3A900EDFA7F /* Resources */,
+				E0DFF71310849B2AB102FEF2 /* [CP] Embed Pods Frameworks */,
+				D3AE0970C50E5FD6BE8B6B51 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Playlists;
+			productName = Playlists;
+			productReference = 13847B501D3BF3A900EDFA7F /* Playlists.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13847B6B1D3BF3A900EDFA7F /* PlaylistsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13847B831D3BF3A900EDFA7F /* Build configuration list for PBXNativeTarget "PlaylistsTests" */;
+			buildPhases = (
+				98C30EB885A6435EC8D613BD /* [CP] Check Pods Manifest.lock */,
+				13847B681D3BF3A900EDFA7F /* Sources */,
+				13847B691D3BF3A900EDFA7F /* Frameworks */,
+				13847B6A1D3BF3A900EDFA7F /* Resources */,
+				998CF7AC5456A39D126D4E84 /* [CP] Embed Pods Frameworks */,
+				0310C7E075932BB31893C728 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13847B6E1D3BF3A900EDFA7F /* PBXTargetDependency */,
+			);
+			name = PlaylistsTests;
+			productName = PlaylistsTests;
+			productReference = 13847B6C1D3BF3A900EDFA7F /* PlaylistsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13847B761D3BF3A900EDFA7F /* PlaylistsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13847B861D3BF3A900EDFA7F /* Build configuration list for PBXNativeTarget "PlaylistsUITests" */;
+			buildPhases = (
+				1417AFC060E06EC9C9229011 /* [CP] Check Pods Manifest.lock */,
+				13847B731D3BF3A900EDFA7F /* Sources */,
+				13847B741D3BF3A900EDFA7F /* Frameworks */,
+				13847B751D3BF3A900EDFA7F /* Resources */,
+				3F3AD29A1B89D0573480FC83 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13847B791D3BF3A900EDFA7F /* PBXTargetDependency */,
+			);
+			name = PlaylistsUITests;
+			productName = PlaylistsUITests;
+			productReference = 13847B771D3BF3A900EDFA7F /* PlaylistsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13847B481D3BF3A900EDFA7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				TargetAttributes = {
+					13847B4F1D3BF3A900EDFA7F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					13847B6B1D3BF3A900EDFA7F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 13847B4F1D3BF3A900EDFA7F;
+					};
+					13847B761D3BF3A900EDFA7F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 13847B4F1D3BF3A900EDFA7F;
+					};
+				};
+			};
+			buildConfigurationList = 13847B4B1D3BF3A900EDFA7F /* Build configuration list for PBXProject "Playlists" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 13847B471D3BF3A900EDFA7F;
+			productRefGroup = 13847B511D3BF3A900EDFA7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13847B4F1D3BF3A900EDFA7F /* Playlists */,
+				13847B6B1D3BF3A900EDFA7F /* PlaylistsTests */,
+				13847B761D3BF3A900EDFA7F /* PlaylistsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13847B4E1D3BF3A900EDFA7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13847B661D3BF3A900EDFA7F /* LaunchScreen.storyboard in Resources */,
+				13847B631D3BF3A900EDFA7F /* Assets.xcassets in Resources */,
+				13847B5E1D3BF3A900EDFA7F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13847B6A1D3BF3A900EDFA7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13847B751D3BF3A900EDFA7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0310C7E075932BB31893C728 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlaylistsTests/Pods-PlaylistsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1417AFC060E06EC9C9229011 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		29ACB5532A482CD9C1465A88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3F3AD29A1B89D0573480FC83 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlaylistsUITests/Pods-PlaylistsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98C30EB885A6435EC8D613BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		998CF7AC5456A39D126D4E84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlaylistsTests/Pods-PlaylistsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3AE0970C50E5FD6BE8B6B51 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Playlists/Pods-Playlists-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0DFF71310849B2AB102FEF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Playlists/Pods-Playlists-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13847B4C1D3BF3A900EDFA7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13847B9D1D3C045300EDFA7F /* PlaylistDTO.m in Sources */,
+				13847BA61D3C13D200EDFA7F /* CoreDataManager.m in Sources */,
+				13847BD31D3CC1D400EDFA7F /* Track+CoreDataProperties.m in Sources */,
+				13847BD41D3CC1D400EDFA7F /* Track.m in Sources */,
+				13847B991D3C00F200EDFA7F /* SyncManager.m in Sources */,
+				130180EA1D3CFF1100274E00 /* TracksTableViewController.m in Sources */,
+				130B13C21D3E3D860060059C /* UITableViewController+Additions.m in Sources */,
+				13847B5B1D3BF3A900EDFA7F /* ViewController.m in Sources */,
+				13847BD51D3CC1D400EDFA7F /* Playlist+CoreDataProperties.m in Sources */,
+				13847B581D3BF3A900EDFA7F /* AppDelegate.m in Sources */,
+				130180E41D3CEE4800274E00 /* PlaylistsTableViewController.m in Sources */,
+				13847B551D3BF3A900EDFA7F /* main.m in Sources */,
+				13F4A9FC1D3D33BB0083C14F /* UIAlertManager.m in Sources */,
+				13847BD61D3CC1D400EDFA7F /* Playlist.m in Sources */,
+				13847BA01D3C056300EDFA7F /* NetworkManager.m in Sources */,
+				13847BBE1D3CA67300EDFA7F /* ResponseDTO.m in Sources */,
+				13847B611D3BF3A900EDFA7F /* Playlists.xcdatamodeld in Sources */,
+				13847BBB1D3CA5C400EDFA7F /* TrackDTO.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13847B681D3BF3A900EDFA7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13847B711D3BF3A900EDFA7F /* PlaylistsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13847B731D3BF3A900EDFA7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13847B7C1D3BF3A900EDFA7F /* PlaylistsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13847B6E1D3BF3A900EDFA7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13847B4F1D3BF3A900EDFA7F /* Playlists */;
+			targetProxy = 13847B6D1D3BF3A900EDFA7F /* PBXContainerItemProxy */;
+		};
+		13847B791D3BF3A900EDFA7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13847B4F1D3BF3A900EDFA7F /* Playlists */;
+			targetProxy = 13847B781D3BF3A900EDFA7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13847B5C1D3BF3A900EDFA7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13847B5D1D3BF3A900EDFA7F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		13847B641D3BF3A900EDFA7F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13847B651D3BF3A900EDFA7F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13847B7E1D3BF3A900EDFA7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		13847B7F1D3BF3A900EDFA7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13847B811D3BF3A900EDFA7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62686E4FC6C35EE92B6A302A /* Pods-Playlists.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Playlists/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = max.Playlists;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		13847B821D3BF3A900EDFA7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09CEE7843934D72471969E5C /* Pods-Playlists.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Playlists/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = max.Playlists;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		13847B841D3BF3A900EDFA7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D44496B1C11CF80158FE5B2A /* Pods-PlaylistsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PlaylistsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = max.PlaylistsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Playlists.app/Playlists";
+			};
+			name = Debug;
+		};
+		13847B851D3BF3A900EDFA7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71AF6BA499641E6004DA262B /* Pods-PlaylistsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PlaylistsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = max.PlaylistsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Playlists.app/Playlists";
+			};
+			name = Release;
+		};
+		13847B871D3BF3A900EDFA7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94ED85AA0933441A71F8FFA0 /* Pods-PlaylistsUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = PlaylistsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = max.PlaylistsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Playlists;
+			};
+			name = Debug;
+		};
+		13847B881D3BF3A900EDFA7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE2AB33D32D7E9DEEB54C52A /* Pods-PlaylistsUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = PlaylistsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = max.PlaylistsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Playlists;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13847B4B1D3BF3A900EDFA7F /* Build configuration list for PBXProject "Playlists" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13847B7E1D3BF3A900EDFA7F /* Debug */,
+				13847B7F1D3BF3A900EDFA7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13847B801D3BF3A900EDFA7F /* Build configuration list for PBXNativeTarget "Playlists" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13847B811D3BF3A900EDFA7F /* Debug */,
+				13847B821D3BF3A900EDFA7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13847B831D3BF3A900EDFA7F /* Build configuration list for PBXNativeTarget "PlaylistsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13847B841D3BF3A900EDFA7F /* Debug */,
+				13847B851D3BF3A900EDFA7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13847B861D3BF3A900EDFA7F /* Build configuration list for PBXNativeTarget "PlaylistsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13847B871D3BF3A900EDFA7F /* Debug */,
+				13847B881D3BF3A900EDFA7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		13847B5F1D3BF3A900EDFA7F /* Playlists.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				13847B601D3BF3A900EDFA7F /* Playlists.xcdatamodel */,
+			);
+			currentVersion = 13847B601D3BF3A900EDFA7F /* Playlists.xcdatamodel */;
+			path = Playlists.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 13847B481D3BF3A900EDFA7F /* Project object */;
+}
