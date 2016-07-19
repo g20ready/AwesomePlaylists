@@ -25,7 +25,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Awesome Playlists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTg-vz-gZ7">
                                 <rect key="frame" x="230" y="28" width="141" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -68,7 +68,7 @@
                                                 <constraint firstAttribute="height" constant="21" id="Jll-S6-2y5"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNI-s8-Jg2" userLabel="count">
@@ -141,17 +141,17 @@
                                                 <constraint firstAttribute="height" constant="84" id="j0K-lP-GGO"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQY-VX-gL7" userLabel="trackName">
-                                            <rect key="frame" x="108" y="16" width="484" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="RQY-VX-gL7" userLabel="trackName">
+                                            <rect key="frame" x="108" y="16" width="484" height="42"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="3bx-uc-cIA"/>
+                                                <constraint firstAttribute="height" constant="42" id="3bx-uc-cIA"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVw-zk-hyW" userLabel="artist">
-                                            <rect key="frame" x="108" y="47" width="484" height="21"/>
+                                            <rect key="frame" x="108" y="66" width="484" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="Vmc-1F-BKj"/>
                                             </constraints>
@@ -161,7 +161,7 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="tVw-zk-hyW" firstAttribute="top" secondItem="RQY-VX-gL7" secondAttribute="bottom" constant="10" id="3By-Nd-j5k"/>
+                                        <constraint firstItem="tVw-zk-hyW" firstAttribute="top" secondItem="RQY-VX-gL7" secondAttribute="bottom" constant="8" id="3By-Nd-j5k"/>
                                         <constraint firstItem="RQY-VX-gL7" firstAttribute="top" secondItem="iKh-BZ-5yE" secondAttribute="topMargin" constant="8" id="90r-hl-fw8"/>
                                         <constraint firstItem="5qM-tj-byJ" firstAttribute="centerY" secondItem="iKh-BZ-5yE" secondAttribute="centerY" id="9LK-jH-cet"/>
                                         <constraint firstItem="RQY-VX-gL7" firstAttribute="leading" secondItem="5qM-tj-byJ" secondAttribute="trailing" constant="8" id="Hz7-xX-HgD"/>
